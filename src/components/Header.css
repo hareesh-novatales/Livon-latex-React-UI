@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=PlayfairDisplay');
+
+.Logo {
+    width: 150px;
+    height: 80px;
+    margin-left: 40px;
+}
+
+.bg {
+    background-color: #c1e3ce;
+    color: rgb(20 26 25) !important;
+}
+
+.nav-link {
+    font-family: 'Montserrat';
+    font-weight: 800 !important;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: rgb(20 26 25) !important;
+    padding: 0px 10px;
+}
+
+.nav-item {
+    padding: 0px 10px;
+}
+
+.pillow-dropdown {
+    width: 600px !important;
+    padding: 20px;
+}
+
+.Topper-dropdown {
+    width: 100vh;
+    height: 30vh;
+}
+
+.Topper-dropdown h3 {
+    text-align: center;
+    font-family: Montserrat !important;
+    font-weight: 800 !important;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    border: none !important;
+    background-color: #c0e2cd !important;
+    line-height: 30px;
+}
+
+.dropdown-item {
+    font-family: Montserrat !important;
+    font-weight: 800 !important;
+    font-size: 16px;
+   
+}
+.dropdown-item:hover {
+    background-color: #fc9b88 !important;
+    color: #fff !important;
+    border-radius: 10px !important;
+}
+
+.dropdown-item h2 {
+    font-family: Montserrat !important;
+    font-weight: 800 !important;
+    font-size: 16px;
+    padding: 20px 0px;
+}
+
+.dropdown .mattress-dropdown {
+    width: 800px !important;
+    padding: 20px;
+
+}
+
+.menu-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-carousel .carousel .carousel-indicators {
+    display: none;
+}
+
+.hero-carousel .carousel-item img {
+    height: 80vh;
+    margin-top: 60px;
+}
+
+.content-overlay h2 {
+    font-size: 45px;
+    color: #213b37;
+    font-weight: bold;
+    text-align: center;
+    width: 85%;
+    margin: 0px auto;
+
+}
+
+.content-overlay p {
+    font-size: 16px;
+    color: #417972;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px 0px;
+}
+
+.content-overlay {
+    border-radius: 30px;
+    background-color: #e3ece7;
+    padding: 20px;
+    position: relative;
+    bottom: 16vh;
+    display: inline-block;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    padding: 20px;
+}
+
+.cat-heading h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: -50px;
+    text-transform: uppercase;
+    color: #417972;
+    padding-bottom: 20px;
+}
+
+.categories .container-fluid {
+    width: 90% !important;
+}
+
+.card-name h2 {
+    position: relative;
+    bottom: 120px;
+    left: 20px;
+    color: #213b37;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 800;
+    font-family: Montserrat;
+}
+
+.card-overlay:hover {
+    background-color: #417972;
+}
+
+.catImage img {
+    width: 100%;
+}
+
+.topper-image img {
+    height: 300px;
+}
+
+.custom-shape-divider-bottom-1635508836 {
+    position: relative;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: scaleX(-1);
+}
+
+.custom-shape-divider-bottom-1635508836 svg {
+    position: relative;
+    display: block;
+    width: calc(183% + 1.3px);
+    height: 80px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1635508836 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.Benefit-heading h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #417972;
+    padding: 10px;
+}
+
+.Benefit-heading p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #417972;
+    width: 80%;
+    margin: 10px auto;
+    padding-bottom: 20px;
+}
+
+.benefits-image img {
+    width: 100%;
+}
+
+.section {
+    background-color: #c0e2cd;
+    margin-top: 80px;
+    padding: 30px 0px;
+    padding-bottom: 60px;
+}
+
+.mat-heading h2 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-top: 80px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 2.5rem;
+    color: #417972;
+    font-family: 'Playfair Display';
+}
+
+.mat-heading p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #417972;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin: 0px 10px;
+    border: none !important;
+    background-color: #e3ece7 !important;
+    height: 600px !important;
+}
+
+.product button {
+    position: fixed;
+    bottom: 20px;
+}
+
+.card-body ul li {
+    list-style-type: disc;
+    color: #213b37;
+
+}
+
+.card-title {
+    color: #417972 !important;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 900 !important;
+    font-family: Montserrat;
+}
+
+.card-text {
+    color: #142220;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+
+.card-body button {
+    /* background-color: #417972;
+    border: none;
+    transition: background-color 0.3s ease; */
+    background-color:#417972;
+    overflow: hidden;
+    color:#fff !important;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease;
+}
+.card-body button::before {
+    content: "BUY NOW";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #f2d381;
+     color:#417972;
+     transform: scaleX(0);
+     transform-origin: right;
+     transition: transform 0.3s ease;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+   }
+.card-body button:hover{
+background-color: #f2d381 !important;
+color: #417972;
+}
+.card-body button:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    border-radius: 30px;
+  }
+.carousel-card {
+    height: auto !important;
+}
+
+.content {
+    color: #fff;
+    padding: 40px 0px;
+    margin-top: 80px;
+}
+
+.content h1 {
+
+    text-align: center;
+    font-size: 5rem;
+    padding: 30px;
+}
+
+.content p,
+.content span {
+    padding: 30px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: Montserrat;
+    text-align: justify;
+    width: 70%;
+    justify-content: left;
+    margin-left: 10%;
+}
+
+.content span {
+    font-weight: 600;
+}
+
+.quiz {
+    padding: 80px 0px;
+}
+
+.quiz-image {
+    padding: 10px 0px;
+    margin-left: 190px;
+}
+
+.quiz-content {
+    background-color: #e3ece7;
+    padding: 40px;
+    border-radius: 0px 250px 250px 0px;
+    padding-top: 15%;
+    padding-bottom: 14%;
+    width: 500px;
+    margin-left: 190px;
+
+}
+
+.quiz-content h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    width: 80%;
+    color: #213b37;
+    padding-bottom: 30px;
+}
+
+.quiz-content h2 span {
+    font-weight: 1000;
+    text-transform: lowercase;
+    color: #213b37;
+    font-size: 2.5rem;
+}
+
+.quiz-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quiz-content button {
+    padding: 10px 30px;
+    border: 2px solid #213b37;
+    background-color: #213b37;
+    border-radius: 30px;
+    margin-top: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.SocialMedia-icons {
+    font-size: 2rem;
+}
+
+.Footer {
+    margin-top: 0px;
+}
+
+.Footer h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+
+.contact {
+    text-align: left;
+    font-size: 35px;
+}
+
+form input {
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+}
+
+form textarea {
+    width: 60%;
+    border: none;
+    padding: 10px;
+}
+
+P .link {
+    color: #142220 !important;
+    font-family: Montserrat;
+}
+
+.copy {
+    padding: 10px 0px;
+}
+.space
+{
+    margin-top: 125px;
+    min-height: calc(100vh - 125px);
+}
+.mattress-image
+{
+    width: 100%;
+    height: 100%;
+}
+.Rating 
+{
+    color: goldenrod!important;
+    display: flex;
+    font-size: 20px;
+
+}
+.Rating .fa-star
+{
+    padding: 0px 2px;
+}
+.Mattress-content h3 {
+    font-size: 18px;
+    line-height: 1.75rem;
+    font-family: Montserrat;
+    font-weight: 900;
+}
+.Mattress-content h2 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-family:PlayfairDisplay sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.para
+{
+    font-size: 15px;
+    font-family: Montserrat;
+}
+.size p
+{
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 900;
+    padding-top: 30px;
+	line-height: 1.5rem;
+	
+}
+.select
+{
+    display:flex;
+    gap:20px;
+}
+.chart {
+    font-size: 1rem;
+    /* line-height: 1.70rem; */
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.chart-size
+{
+    gap: 10px;
+    display: flex;
+}
+.chart-size p
+{
+    cursor: pointer;
+    display: inline-block;
+    /* margin: 0 10px; */
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #c1e3ce40;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 900;
+}
+.variety {
+    display: flex;
+    gap: 10px;
+}
+.variety button {
+    padding: 10px 40px 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-weight: 600;
+    font-family: Montserrat;
+    font-size: 12px;
+    height: 35px;
+}
+
+table
+{
+    margin-top: 20px;
+    background-color: #c1e3ce40;
+    border-radius: 10px;
+}
+table td 
+{
+    padding: 10px 15px;
+}
+.add-to-cart button
+{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: #417972;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 1.75rem;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-top: 30px;
+
+}
+.product-inc
+{
+    display:flex;
+    /* gap: 20px; */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2px 5px;
+    height: 30px;
+    background-color: #c1e3ce40;
+} 
+.product-inc p
+{
+    padding: 0px 20px;
+    opacity: 1;
+}
+.product-inc button
+{
+    border: none; 
+    background-color: #c1e3ce80; 
+}
+.payment
+{
+    display:flex;
+    gap:40px;
+    margin-top: 30px;
+}
+.d-time
+{
+    font-weight: 700;
+}
+.delivery h4
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.price h4
+{
+    font-weight: 700;
+}
+.boxes {
+    border: 2px dashed black; /* You can replace "black" with your desired color */
+    padding: 20px; /* Add padding as needed */
+	border-radius: 1rem;
+	text-align:center;
+	background-color:#c1e3ce40;
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
