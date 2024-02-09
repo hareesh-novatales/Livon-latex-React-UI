@@ -32,15 +32,21 @@
 }
 
 .Topper-dropdown {
-    width: 100vh;
-    height: 30vh;
+    width: 600px !important;
+    padding: 20px;
+
 }
 
-.Topper-dropdown h3 {
-    text-align: center;
-    font-family: Montserrat !important;
-    font-weight: 800 !important;
-    font-size: 16px;
+.Bedding-dropdown {
+    width: 700px !important;
+    padding: 20px;
+
+}
+
+.Kids-dropdown {
+    width: 500px !important;
+    padding: 20px;
+
 }
 
 .dropdown-menu {
@@ -53,8 +59,9 @@
     font-family: Montserrat !important;
     font-weight: 800 !important;
     font-size: 16px;
-   
+
 }
+
 .dropdown-item:hover {
     background-color: #fc9b88 !important;
     color: #fff !important;
@@ -69,11 +76,115 @@
 }
 
 .dropdown .mattress-dropdown {
-    width: 800px !important;
+    width: 600px !important;
     padding: 20px;
 
 }
 
+.popup-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+}
+.form-data
+{
+    text-align:center;
+}
+.form-data input {
+    width: 100%;
+    background-color: rgb(237 245 244);
+}
+
+.login {
+    border-radius: 50%;
+}
+
+.otp {
+    font-size: 14px;
+    margin: 10px 0px 10px 0px;
+}
+
+.phonenumber {
+    border-radius: 10px;
+    margin: 0px 0px 20px 0px;
+    padding: 16px;
+}
+
+.mobileotp {
+    text-align: center;
+}
+
+.mobileotp button {
+    font-size: 0.875rem;
+    padding: 12px;
+    border-radius: 10px;
+    letter-spacing: .3em;
+    text-align: center;
+}
+
+.signin {
+    color: rgb(177 212 205);
+}
+
+.google-login button {
+    width: 100%;
+
+}
+
+.google-button {
+    all: unset;
+    margin: auto;
+    height: 52px;
+    background-color: #4285f4;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: all 300ms ease-in-out;
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-button .google-icon-wrapper {
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.google-button .google-button-text {
+    display: flex;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    letter-spacing: 0.2px; 
+   margin-top: 15px;
+    margin-right: 6.5rem;
+    align-items: center;
+  }
+
+.google-login button p {
+    line-height: 2;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.otpInput
+{
+    width:40px;
+    height:40px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.2em;
+}
 .menu-image {
     width: 100%;
     height: auto;
@@ -212,11 +323,11 @@
     padding: 10px;
     padding-top: 80px;
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 3px;
     line-height: 2.5rem;
     color: #417972;
-    font-family: 'Playfair Display';
+    font-family: 'Segoe UI';
 }
 
 .mat-heading p {
@@ -263,43 +374,44 @@
 }
 
 .card-body button {
-    /* background-color: #417972;
-    border: none;
-    transition: background-color 0.3s ease; */
-    background-color:#417972;
+    background-color: #417972;
     overflow: hidden;
-    color:#fff !important;
+    color: #fff !important;
     border: none;
     border-radius: 30px;
     padding: 10px 30px;
     transition: background-color 0.3s ease;
 }
+
 .card-body button::before {
     content: "BUY NOW";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: #f2d381;
-     color:#417972;
-     transform: scaleX(0);
-     transform-origin: right;
-     transition: transform 0.3s ease;
-     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f2d381;
+    color: #417972;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
-   }
-.card-body button:hover{
-background-color: #f2d381 !important;
-color: #417972;
 }
+
+.card-body button:hover {
+    background-color: #f2d381 !important;
+    color: #417972;
+}
+
 .card-body button:hover::before {
     transform: scaleX(1);
     transform-origin: left;
     border-radius: 30px;
-  }
+}
+
 .carousel-card {
     height: auto !important;
 }
@@ -406,20 +518,20 @@ color: #417972;
     font-size: 35px;
 }
 
-form input {
+.footer-form form input {
     width: 60%;
     margin: 10px auto;
     padding: 10px;
     border: none;
 }
 
-form textarea {
+.footer-form form textarea {
     width: 60%;
     border: none;
     padding: 10px;
 }
 
-P .link {
+.link {
     color: #142220 !important;
     font-family: Montserrat;
 }
@@ -427,111 +539,101 @@ P .link {
 .copy {
     padding: 10px 0px;
 }
-.space
-{
+
+.space {
     margin-top: 125px;
     min-height: calc(100vh - 125px);
 }
-.mattress-image
-{
+
+.mattress-image {
     width: 100%;
     height: 100%;
 }
-.Rating 
-{
-    color: goldenrod!important;
-    display: flex;
-    font-size: 20px;
 
+.Mattress-product .container-fluid {
+    width: 85% !important;
 }
-.Rating .fa-star
-{
-    padding: 0px 2px;
+
+.star-rating .fa-star,
+.star-rating .fa-star-o {
+    color: #f7bd71;
 }
+
+.number-rating {
+    font-weight: 600;
+}
+
 .Mattress-content h3 {
     font-size: 18px;
     line-height: 1.75rem;
     font-family: Montserrat;
     font-weight: 900;
 }
+
 .Mattress-content h2 {
     font-size: 1.5rem;
     line-height: 1.75rem;
-    font-family:PlayfairDisplay sans-serif;
+    font-family: PlayfairDisplay sans-serif;
     font-weight: 600;
     text-transform: uppercase;
 }
-.para
-{
+
+.para {
     font-size: 15px;
     font-family: Montserrat;
 }
-.size p
-{
-    font-size: 1rem;
+
+.size p {
+    font-size: 15px;
     font-family: Montserrat;
     font-weight: 900;
-    padding-top: 30px;
-	line-height: 1.5rem;
-	
+    padding-top: 10px;
+    margin: 0px;
 }
-.select
-{
-    display:flex;
-    gap:20px;
+
+.select {
+    display: flex;
+    gap: 20px;
 }
+
 .chart {
-    font-size: 1rem;
-    /* line-height: 1.70rem; */
+    font-size: 15px;
     font-family: Montserrat;
     font-weight: 500;
 }
-.chart-size
-{
-    gap: 10px;
+
+.chart-size {
+    gap: 20px;
     display: flex;
 }
-.chart-size p
-{
+
+.chart-size p {
     cursor: pointer;
     display: inline-block;
-    /* margin: 0 10px; */
-    padding: 5px 10px;
-    border: 1px solid #ccc;
+    padding: 2px 15px;
     border-radius: 8px;
-    background-color: #c1e3ce40;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 900;
 }
+
 .variety {
     display: flex;
     gap: 10px;
 }
+
 .variety button {
-    padding: 10px 40px 10px;
+    padding: 5px;
     border-radius: 30px;
     border: 1px solid black;
     text-transform: uppercase;
-    background-color: #fff;
     font-weight: 600;
     font-family: Montserrat;
     font-size: 12px;
-    height: 35px;
+    width: 18%;
 }
 
-table
-{
-    margin-top: 20px;
-    background-color: #c1e3ce40;
-    border-radius: 10px;
-}
-table td 
-{
-    padding: 10px 15px;
-}
-.add-to-cart button
-{
+.add-to-cart button {
     padding: 15px;
     width: 100%;
     border: none;
@@ -543,54 +645,253 @@ table td
     font-family: Montserrat;
     font-weight: 600;
     margin-top: 30px;
-
 }
-.product-inc
-{
-    display:flex;
-    /* gap: 20px; */
+
+.add-to-cart button:hover {
+    color: black;
+}
+
+.product-inc {
+    display: flex;
     border: 1px solid black;
     border-radius: 5px;
-    width: 100%;
+    width: 100px;
     padding: 2px 5px;
     height: 30px;
     background-color: #c1e3ce40;
-} 
-.product-inc p
-{
+}
+
+.product-inc p {
     padding: 0px 20px;
     opacity: 1;
 }
-.product-inc button
-{
-    border: none; 
-    background-color: #c1e3ce80; 
+
+.product-inc button {
+    border: none;
+    background-color: #c1e3ce80;
 }
-.payment
-{
-    display:flex;
-    gap:40px;
-    margin-top: 30px;
-}
-.d-time
-{
+
+
+.d-time {
     font-weight: 700;
 }
-.delivery h4
-{
+
+.delivery h4 {
     font-size: 1.2rem;
     font-weight: 500;
 }
-.price h4
-{
+
+.price h4 {
     font-weight: 700;
 }
+
 .boxes {
-    border: 2px dashed black; /* You can replace "black" with your desired color */
-    padding: 20px; /* Add padding as needed */
-	border-radius: 1rem;
-	text-align:center;
-	background-color:#c1e3ce40;
-	margin-top: 30px;
+    border: 2px dashed black;
+    padding: 20px;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #c1e3ce40;
+    margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.additional-images img {
+    width: 100px;
+
+}
+
+.additional-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.advantage-icons img {
+    width: 100px;
+    text-align: center;
+}
+
+.advantage-icons p {
+    padding: 10px 0px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.advantage-icons .container {
+    width: 80%;
+}
+
+.content-des {
+    padding: 20px;
+    background-color: #c1e3ce40;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.mattresTypes {
+    margin-top: 15px;
+    background-color: #c1e3ce40;
+    border-radius: 10px;
+    padding: 20px;
+    width: 85%;
+}
+
+.flexible-content {
+    display: flex;
+    margin: 20px auto;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.custom {
+    text-align: right;
+    background-color: none;
+    text-decoration: underline;
+    width: 85%;
+}
+
+.bedding-covers h5 {
+    font-size: 18px;
+    font-family: montserrat;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.cover-name {
+    padding-left: 10px;
+}
+
+.cover-para {
+    font-size: 14px;
+    font-family: poppins;
+}
+
+.specifications {
+    padding: 50px 0px;
+    margin-bottom: 80px;
+}
+
+.specifications-heading h1 {
+    text-align: center;
+    font-family: motserrat;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 40px 0px;
+
+}
+
+.box {
+    border: 1px solid #c1e3ce;
+
+}
+
+.box .head h3 {
+    border-bottom: 1px solid #c1e3ce;
+    padding: 20px;
+    background-color: aliceblue;
+    font-family: motserrat;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.box p {
+    text-align: center;
+    padding: 5px 30px;
+    font-size: 15px;
+    line-height: 1.75rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+table {
+    margin: 0px auto;
+    font-size: 15px;
+}
+
+th {
+    padding: 15px;
+    font-weight: 100;
+
+}
+
+.specifications a {
+    color: #074E8C;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dialog-title {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-align: left;
+    padding: 20px;
+}
+
+.css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    max-height: calc(100% - 64px);
+    max-width: 750px !important;
+    border-radius: 30px !important;
+    font-family: montserrat;
+    padding: 20px;
+}
+
+.dialog-content input {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.226);
+
+}
+
+.dialog-content textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.226);
+
+}
+
+.cancel {
+    background-color: #3c5657 !important;
+    color: #fff !important;
+    text-transform: capitalize !important;
+    font-family: montserrat !important;
+}
+
+.save {
+    background-color: #ff9380 !important;
+    color: #fff !important;
+    text-transform: capitalize !important;
+    font-family: montserrat !important;
+}
+
+.dimensions .d-heading {
+    font-weight: 600;
+    font-size: 15px;
+    font-family: montserrat;
+}
+
+.pillow-type {
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+}
+
+.pillow-type p {
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Montserrat;
+    font-size: 12px;
+    width: 22%;
+    text-align: center;
 }
