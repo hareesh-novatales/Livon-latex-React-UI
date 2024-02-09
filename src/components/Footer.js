@@ -34,7 +34,7 @@ export default function Footer() {
                </div>
                <p className='copy'>&copy; 2023 privacy policy</p>
                 </div>
-                <div className='col-lg-6'>
+                <div className='col-lg-6 footer-form'>
                   <h3 className='contact'>contact us</h3>
                      <form action="" method='post'>
                        <input  type="text" placeholder='Enter your name' required/><br/>

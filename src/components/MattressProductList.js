@@ -6,8 +6,6 @@ import Button from 'react-bootstrap/Button';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './Header.css';
-import SingleProductDetails from './SingleProductDetails';
-
 
 
 export default function MattressProductList() {
@@ -37,7 +35,7 @@ export default function MattressProductList() {
 
   const navigateToSingleProductDetails = (data) => {
     // 👇️ navigate to /singleproductdetails
-    navigate('/product/'+ data.id);
+    navigate('/product/'+ data.Category + data.id + data.title);
   };
 
   return (

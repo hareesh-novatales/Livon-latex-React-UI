@@ -6,21 +6,24 @@ import './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import SingleProductDetails from './components/SingleProductDetails';
+import PillowSingleProductDetails  from './components/PillowSingleProductDetails';
 import Home from './components/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
-
+import GoogleMap from './components/GoogleMap';
 
 function App() {
   return (
     <>    
-        <Header />
+      <Header />
       <Routes>
-        {/* <Switch> */}
+        
           <Route path="/" element={<Home/>}/>
-          <Route path="/product/:id" element={<SingleProductDetails/>} />
-        {/* </Switch> */}
+          <Route path="/product/:Category/:id/:title" element={<SingleProductDetails/>} />
+          <Route path="/pillowProduct/:id" element={<PillowSingleProductDetails/>} />
+      
       </Routes>
+      <GoogleMap />
       <Footer />
     </>
 

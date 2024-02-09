@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Carousel from "react-multi-carousel";
@@ -28,6 +29,7 @@ export default function PillowProducts() {
     }
   };
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
   const fetchInfo = () => {
     return fetch('https://requestly.tech/api/mockv2/Pillows-product-list?teamId=1tJd59ym5eYVrbeqtpY0')
       .then((res) => res.json())
@@ -40,6 +42,12 @@ export default function PillowProducts() {
   useEffect(() => {
     fetchInfo();
   }, []);
+
+  
+  const navigateToPillowSingleProductDetails = (data) => {
+    // 👇️ navigate to /singleproductdetails
+    navigate('/pillowProduct/'+ data.id);
+  };
   return (
     <div className="section">
       <div className='container-fluid'>
@@ -50,7 +58,7 @@ export default function PillowProducts() {
         <Carousel responsive={responsive}>
           {data.map((dataObj, index) => {
             return (
-              <div className='card product' key={index} >
+              <div className='card product' key={dataObj.id} >
                 <img src={dataObj.imageurl} alt='mattress product image' className='product-image' />
                 <Card.Body>
                   <Card.Title>{dataObj.title}</Card.Title>
@@ -62,9 +70,7 @@ export default function PillowProducts() {
                       <li>{dataObj.pointth}</li>
                     </ul>
                   </Card.Text>
-
-                  <Button>Buy Now</Button>
-
+                  <Button onClick={() => {navigateToPillowSingleProductDetails(dataObj)} }>Buy Now</Button>
                 </Card.Body>
               </div>
 
