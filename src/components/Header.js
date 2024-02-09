@@ -14,7 +14,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from "./Home";
 
 
-function Header() {
+function Header({show, handleShow, handleClose}) {
   const [showMattressDropdown, setShowMattressDropdown] = useState(false);
   const [showPillowDropdown, setShowPillowDropdown] = useState(false);
   const handleMattressMouseEnter = () => {
@@ -43,7 +43,7 @@ function Header() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="" className="nav-item">Home</Nav.Link>
+            <Nav.Link to="/" className="nav-item">Home</Nav.Link>
             <NavDropdown title="Mattress" id="navbarScrollingDropdown" className="nav-item"
               show={showMattressDropdown}
               onMouseEnter={handleMattressMouseEnter}
@@ -159,7 +159,7 @@ function Header() {
           <div className="d-flex">
             <Nav.Link href="#action1" className="nav-item">Blog</Nav.Link>
             <FontAwesomeIcon icon={faPhone} className="nav-item icon" />
-            <FontAwesomeIcon icon={faCartShopping} className="nav-item icon" />
+            <FontAwesomeIcon icon={faCartShopping} className="nav-item icon" onClick={handleShow} />
             <FontAwesomeIcon icon={faUser} className="nav-item icon" />
           </div>
         </Navbar.Collapse>

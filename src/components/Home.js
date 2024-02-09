@@ -17,10 +17,11 @@ import PillowProducts from './PillowProducts';
 import TopperProducts from './TopperProducts';
 import BeddingProducts from './BeddingProducts';
 import KidsProducts from './KidsProducts';
+import Header from './Header';
 export default function Home() {
   return (
     <div>
-        
+          <Header/>
             <HeroImage />
             <Categories />
             <Benefits />
@@ -33,7 +34,7 @@ export default function Home() {
             <SavePlanet />
             <Quiz />
             <GoogleMap />
-          
+
     </div>
   )
 }

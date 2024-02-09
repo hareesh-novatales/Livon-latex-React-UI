@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faStar } from '@fortawesome/free-solid-svg-icons';
-import { Button } from "react-bootstrap";
-export default function SingleProductDetails() {
+import { Button } from "react-bootstrap"; 
+export default function SingleProductDetails() { 
   const [item, setItem] = useState({});
   const { id } = useParams();
   const [count, setCount] = useState(1);
@@ -142,7 +142,7 @@ export default function SingleProductDetails() {
                   <h4>Free Delivery</h4>
                 </div>
               </div>
-              <div className="add-to-cart">
+              <div className="add-to-cart">                 
                 <button>ADD TO CART</button>
               </div>
                 <div className="boxes">30% Off + Free Shredded Latex Pillow On This Mattress<br /> Purchase | Use Code: SLEEP30</div>

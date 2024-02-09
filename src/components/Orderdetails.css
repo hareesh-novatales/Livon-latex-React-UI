@@ -1,0 +1,17 @@
+.applied-offers span{
+   color: rgb(255 147 128);
+    margin-left: -4px ;
+}
+.jsRegister{
+     color: rgb(255 147 128);
+      font-size: 0.95rem ;
+}
+/* .applied-offers */
+
+.applied-offers button{
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    margin-left: 12px;
+}
+  
