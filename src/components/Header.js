@@ -18,7 +18,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import OtpInput from "./OtpInput";
 
-function Header() {
+function Header({show, handleShow, handleClose}) {
   const [showMattressDropdown, setShowMattressDropdown] = useState(false);
   const [mattressHoveredIndex, setMattressHoveredIndex] = useState(null);
   const [showPillowDropdown, setShowPillowDropdown] = useState(false);

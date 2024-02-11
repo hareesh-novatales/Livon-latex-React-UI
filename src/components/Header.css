@@ -93,10 +93,11 @@
     border-radius: 50%;
     font-size: 16px;
 }
-.form-data
-{
-    text-align:center;
+
+.form-data {
+    text-align: center;
 }
+
 .form-data input {
     width: 100%;
     background-color: rgb(237 245 244);
@@ -166,25 +167,26 @@
     color: #ffffff;
     font-size: 16px;
     font-family: 'Montserrat';
-    letter-spacing: 0.2px; 
-   margin-top: 15px;
+    letter-spacing: 0.2px;
+    margin-top: 15px;
     margin-right: 6.5rem;
     align-items: center;
-  }
+}
 
 .google-login button p {
     line-height: 2;
     font-weight: bold;
     font-size: 1rem;
 }
-.otpInput
-{
-    width:40px;
-    height:40px;
+
+.otpInput {
+    width: 40px;
+    height: 40px;
     margin: 5px;
     text-align: center;
     font-size: 1.2em;
 }
+
 .menu-image {
     width: 100%;
     height: auto;
@@ -347,6 +349,7 @@
 
 .product button {
     position: fixed;
+    width: 85%;
     bottom: 20px;
 }
 
@@ -662,11 +665,12 @@
 }
 
 .product-inc p {
-    padding: 0px 20px;
+    padding: 0px 26px;
     opacity: 1;
 }
 
 .product-inc button {
+    padding: 0px 5px;
     border: none;
     background-color: #c1e3ce80;
 }
@@ -693,6 +697,10 @@
     background-color: #c1e3ce40;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+button.accordion-button.collapsed {
+    background-color: rgb(214 233 230);
 }
 
 .additional-images img {

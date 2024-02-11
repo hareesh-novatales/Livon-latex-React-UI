@@ -15,11 +15,10 @@ import PillowProducts from './PillowProducts';
 import TopperProducts from './TopperProducts';
 import BeddingProducts from './BeddingProducts';
 import KidsProducts from './KidsProducts';
-
 export default function Home() {
   return (
     <div>
-        
+          
             <HeroImage />
             <Categories />
             <Benefits />
