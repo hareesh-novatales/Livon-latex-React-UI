@@ -115,7 +115,6 @@ export default function SingleProductDetails() {
     })
     .catch((error) => {
       console.error('Error:', error);
-
     });
   };
   return (
@@ -159,6 +158,24 @@ export default function SingleProductDetails() {
                 ) : (
                   <p>No description available.</p>
                 )}
+              </div>
+              <div className="advantage-icons ">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-4">
+                      <img src={trial} alt="icon-1" />
+                      <p>100 NIGHTS <br /> FREE TRIAL</p>
+                    </div>
+                    <div className="col-lg-4">
+                      <img src={warranty} alt="icon-2" />
+                      <p>15 YEARS <br /> WARRANTY</p>
+                    </div>
+                    <div className="col-lg-4">
+                      <img src={delivery} alt="icon-3" />
+                      <p>FREE SHIPPING</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-lg-6 ps-5">
@@ -337,24 +354,7 @@ export default function SingleProductDetails() {
                 <button onClick={handleAddToCart}>ADD TO CART</button>
               </div>
               <div className="boxes">30% Off + Free Shredded Latex Pillow On This Mattress<br /> Purchase | Use Code: SLEEP30</div>
-              <div className="advantage-icons ">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-4">
-                      <img src={trial} alt="icon-1" />
-                      <p>100 NIGHTS <br /> FREE TRIAL</p>
-                    </div>
-                    <div className="col-lg-4">
-                      <img src={warranty} alt="icon-2" />
-                      <p>15 YEARS <br /> WARRANTY</p>
-                    </div>
-                    <div className="col-lg-4">
-                      <img src={delivery} alt="icon-3" />
-                      <p>FREE SHIPPING</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
             </div>
           </div>
           <div className="specifications">
