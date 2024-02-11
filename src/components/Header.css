@@ -24,6 +24,7 @@
 
 .nav-item {
     padding: 0px 10px;
+    cursor: pointer;
 }
 
 .pillow-dropdown {
@@ -85,12 +86,12 @@
     position: absolute;
     top: 40px;
     right: 40px;
-    color: #fff;
-    font-size: 20px;
     cursor: pointer;
     background-color: black;
     color: white;
     border-radius: 50%;
+    width: 27px;
+    height: 27px;
     font-size: 16px;
 }
 

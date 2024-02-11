@@ -35,7 +35,7 @@ export default function MattressProductList() {
 
   const navigateToSingleProductDetails = (data) => {
     // 👇️ navigate to /singleproductdetails
-    navigate('/product/'+ data.Category + data.id + data.title);
+    navigate('/product/'+ data.Category + '/' + data.id + '/' + data.title);
   };
 
   return (
