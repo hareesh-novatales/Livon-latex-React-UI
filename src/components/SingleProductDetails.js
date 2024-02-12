@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import Addtocart from "./Addtocart";
+
 
 export default function SingleProductDetails() {
   const [item, setItem] = useState(null);
@@ -22,8 +22,7 @@ export default function SingleProductDetails() {
   const [selectedHeight, setSelectedHeight] = useState('');
   const [selectedTypeSize, setSelectedTypeSize] = useState(null);
   const [selectedCover, setSelectedCover] = useState(null);
-  const [sideBarshow, setSidebarShow] = useState(false);
-
+  
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -83,7 +82,6 @@ export default function SingleProductDetails() {
 
   useEffect(() => {
     fetchInfo();
-    window.scrollTo(0, 0);
   }, []);
 
   const [activeImg, setActiveImage] = useState(item?.imageurl1)
@@ -94,14 +92,14 @@ export default function SingleProductDetails() {
   const handleAddToCart = () => {
     const payload = {
       "mattressType": selectedMattressType,
-      "height": selectedHeight,
-      "dimensions": selectedTypeSize,
+      "height" :  selectedHeight,
+      "dimensions" : selectedTypeSize,
       "cover": selectedCover,
-      "quantity": count,
+      "quantity" : count,
       "category": item.Category,
       "productName": item.title,
       id: id,
-      "TotalPrice": "₹" + totalAmount + "/-"
+      "TotalPrice":"₹" + totalAmount + "/-"
     };
 
     fetch('https://requestly.tech/api/mockv2/mattress-single-product-Details?teamId=1tJd59ym5eYVrbeqtpY0/add-to-cart', {
@@ -111,18 +109,14 @@ export default function SingleProductDetails() {
       },
       body: JSON.stringify(payload),
     })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-      setSidebarShow(!sideBarshow);
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
   };
-  const handleCloseSideNav = (data) => {
-    setSidebarShow(data);
-  }
   return (
     <div className="space">
       {item && <div className="Mattress-product">
@@ -318,9 +312,9 @@ export default function SingleProductDetails() {
                 <div className="adding col-lg-2">
                   <p>Quantity:</p>
                   <div className="product-inc">
-                    <button onClick={handleSubtract}>-</button>
+                  <button onClick={handleSubtract}>-</button>
                     <p>{count}</p>
-                    <button onClick={handleAdd}>+</button>
+                  <button onClick={handleAdd}>+</button>
                   </div>
                 </div>
                 <div className="col-lg-2"></div>
@@ -360,6 +354,7 @@ export default function SingleProductDetails() {
                 <button onClick={handleAddToCart}>ADD TO CART</button>
               </div>
               <div className="boxes">30% Off + Free Shredded Latex Pillow On This Mattress<br /> Purchase | Use Code: SLEEP30</div>
+           
             </div>
           </div>
           <div className="specifications">
@@ -413,8 +408,6 @@ export default function SingleProductDetails() {
               <p>Your 100 nights trial for our latex mattress begins on the day of delivery and it is limited to one mattress per household. Our “Success Tips” help center article provides valuable insights that helps in ensuring, your Livon Comforts experience exceeds the expectations that you have got from us.</p>
             </div>
           </div>
-
-          {sideBarshow && <Addtocart handleCloseSideNav={handleCloseSideNav} sideBarshow={sideBarshow}></Addtocart>}
         </div>
       </div>}
     </div>

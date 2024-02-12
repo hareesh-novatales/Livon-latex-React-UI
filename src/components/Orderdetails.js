@@ -119,7 +119,7 @@ const Orderdetails = ({ products, toggleDisplay, isDisplayed, displayed }) => {
       )}
 
       <div className="pop">
-                    <div className="popup popup-coupon">
+                    <div className="popup popup-register">
                       <div>
                         <form method="">
                           <div className="container" id="wrapper">

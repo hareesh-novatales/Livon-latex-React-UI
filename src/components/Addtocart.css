@@ -1,125 +1,124 @@
 /*---------------------------------Add to cart click aside menu ------------------------------*/
 
-.offcanvas-title {
-  margin: 30px 0px -6px 52px;
+.offcanvas-title {  
+  margin: 30px 0px -6px 52px;  
 }
 
-.offcanvas.show,
-.offcanvas.showing {
-  /* visibility: visible; */
-  width: 40% !important;
-  overflow-y: visible;
-  max-height: 100vh;
+ .offcanvas.show, .offcanvas.showing {
+    /* visibility: visible; */
+    width:40%;
+    overflow-y:visible;
+	max-height:100vh;
 }
 
-.dFlex {
-  display: flex;
-  justify-content: space-between;
-  margin: 12px 0px 0px 0;
-
-}
-
-.thumbnailImg {
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: center;
-}
-
-h2 {
-  font-size: 18px !important;
-  font-weight: 700 !important;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 6px !important;
-}
-
-.small {
-  margin: 0px 0px 0px -48px;
-  /* 15px */
-}
-
-div .extra {
-  margin: 0px 0px 0px 15px;
-}
-
-.button-input {
-  margin: 0px 3px 0px 3px;
-  width: 22%;
-}
-
-.snapmint_lowest_emi_value {
-  display: none;
-}
-#ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  /* gap: 6px; */
-
-}
-
-#ul li {
-  border-right: 1px solid #000;
-  padding: 0 5px;
-  font-size: 13px;
-}
-
-#ul li:first-child {
-  padding-left: 0;
-  /* width: 33%;
+        .dFlex {
+            display: flex;
+            /* gap: 10px; */ 
+      margin: 12px 0px 0px 50px;
+			
+        }
+        .thumbnailImg {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            margin-bottom: 6px !important;
+        }
+          .small{
+            margin: 0px 0px 0px -48px;
+            /* 15px */
+          }
+          div .extra{
+            margin: 0px 0px 0px 15px;
+          }
+          .button-input{
+            margin: 0px 3px 0px 3px;
+            width: 22%;
+          }
+          .snapmint_lowest_emi_value{
+              display: none;
+          }
+          .dFlex{
+            flex-wrap: wrap;
+          }
+          /* span{
+          margin: 0px 0px 0px 30px;
+          } */
+             
+          .snap-emi-slogan span{
+            margin: 0px 0px 0px 30px;
+          }
+        #ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            /* gap: 6px; */
+			
+        }
+        #ul li {
+            border-right: 1px solid #000;
+            padding: 0 5px;
+            font-size: 13px;
+        }
+        #ul li:first-child {
+            padding-left: 0;
+            /* width: 33%;
             padding: 8px 0px 0px 0px; */
-}
-
-#ul li:last-child {
-  border-right: 0;
-}
-
-.couponCode {
-  font-size: 12px;
-  border: 1px dotted #000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.couponCode .leftBlk {
-  padding: 5px 10px;
-}
-
-.couponCode .rightBlk {
-  background-color: #000;
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 12px;
-}
-
-.deleteBlk {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.deleteBlk h6 {
-  cursor: pointer;
-  font-size: 12px;
-  margin: 0;
-}
-
-.deleteBlk h3 {
-  font-size: 20px;
-  margin: 0;
-
-}
-
+        }
+        #ul li:last-child {
+            border-right: 0;
+        }
+        .couponCode {
+            font-size: 12px;
+            border: 1px dotted #000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .couponCode .leftBlk {
+            padding: 5px 10px;
+        }
+        .couponCode .rightBlk {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        .deleteBlk {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .deleteBlk h6 {
+            cursor: pointer;
+            font-size: 12px;
+            margin: 0;
+        }
+        .deleteBlk h3 {
+            font-size: 20px;
+            margin: 0;
+		
+        }
 h4 {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 /* Container styling */
+.flex {
+  display: flex;
+}
 
+.justify-between {
+  justify-content: space-between;
+}
 
 .mt-1 {
   margin-top: 1rem;
@@ -135,17 +134,15 @@ h4 {
 
 /* Paragraph styling */
 .text-sm {
-  font-size: 1rem;
-  /* Adjust as needed */
-  margin-top: 20px;
-  margin-left: 50px;
+  font-size: 1rem; /* Adjust as needed */
+  margin-top:20px;
+  margin-left:50px;
 }
 
 .text-lg {
-  font-size: 1.5rem;
-  /* Adjust as needed */
-  margin-top: 20px;
-  margin-right: 50px;
+  font-size: 1.5rem; /* Adjust as needed */
+   margin-top:20px;
+   margin-right:50px;
 }
 
 .font-semibold {
@@ -157,8 +154,7 @@ h4 {
 }
 
 .font-montserrat {
-  font-family: 'Montserrat', sans-serif;
-  /* Replace with your preferred font */
+  font-family: 'Montserrat', sans-serif; /* Replace with your preferred font */
 }
 
 /* Button styling */
@@ -167,40 +163,32 @@ h4 {
 }
 
 .w-full {
-  width: 90%;
+  width:90%;
 }
 
 .md\:py-3 {
-  padding-top: 0.75rem;
-  /* Adjust as needed */
-  padding-bottom: 0.75rem;
-  /* Adjust as needed */
+  padding-top: 0.75rem; /* Adjust as needed */
+  padding-bottom: 0.75rem; /* Adjust as needed */
 }
 
-.py-1 {
-  padding-top: 0.375rem;
-  /* Adjust as needed */
-  padding-bottom: 0.375rem;
-  /* Adjust as needed */
+.py-1  {
+  padding-top: 0.375rem; /* Adjust as needed */
+  padding-bottom: 0.375rem; /* Adjust as needed */
 }
 
 .my-3 {
-  margin-top: 0.75rem;
-  /* Adjust as needed */
-  margin-bottom: 0.75rem;
-  /* Adjust as needed */
+  margin-top: 0.75rem; /* Adjust as needed */
+  margin-bottom: 0.75rem; /* Adjust as needed */
 
-  border: none;
+  border:none;
 }
-
 .my-0 {
-  /* margin-top: 0!important; */
-  margin-bottom: 0 !important;
+    /* margin-top: 0!important; */
+    margin-bottom: 0!important;
 }
 
 .text-white {
-  color: #fff;
-  /* Adjust as needed */
+  color: #fff; /* Adjust as needed */
 }
 
 
@@ -214,10 +202,8 @@ h4 {
 /* Image styling */
 .snap-txt-logo,
 .info-img {
-  max-width: 100%;
-  /* Make sure images don't exceed their container */
-  height: auto;
-  /* Maintain aspect ratio */
+  max-width: 100%; /* Make sure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Cursor styling */
@@ -241,121 +227,101 @@ h4 {
 }
 
 .my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; /* Adjust as needed */
+  margin-bottom: 0.5rem; /* Adjust as needed */
 }
 
-.cont-shopp {
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
 
 /* Styling for "Continue Shopping" paragraph */
 .continue-shopping {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 0;
-  font-weight: bold;
-  padding-bottom: 6px;
-  cursor: pointer;
+  font-size: 1rem; /* Adjust as needed */
+  font-weight: 500; /* Adjust as needed */
+  margin-left:280px;
+  margin-bottom: 0; /* Remove any default margin */
+  display: inline-block;
+  margin-top:10px;
+  font-weight:bold;
+  padding-bottom:20px;
 }
 
 /* SVG icon styling */
 .svg-icon {
   width: 1.5em;
   height: 1.5em;
+  /* fill: #your-main-color; Adjust as needed */
   vertical-align: middle;
 }
-
 /* Button with class "check" styling */
 button.check {
   display: block;
   width: 90%;
-  padding: 1.5rem;
-  margin: 0 auto;
+  padding: 1.5rem ; /* Adjust padding as needed */
+  margin: 0.75rem 0; /* Adjust margin as needed */
   text-align: center;
   cursor: pointer;
-  background-color: #000;
+  background-color: #000; /* Background color */
   border: none;
   letter-spacing: .8em;
+  margin-left:50px;
 }
 
 button.check h6 {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
+  font-size: 1rem; /* Adjust font size as needed */
+  font-weight: 600; /* Adjust font weight as needed */
+  color: #fff; /* Text color */
+  margin-left:-40px;
 }
-
 button.check h6 a {
   margin: 0;
-  font-size: 1rem;
-  /* Adjust font size as needed */
-  font-weight: 600;
-  /* Adjust font weight as needed */
-  color: #fff;
-  /* Text color */
-  text-decoration: none;
-  /* Remove underline from the link */
+  font-size: 1rem; /* Adjust font size as needed */
+  font-weight: 600; /* Adjust font weight as needed */
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline from the link */
 }
-
 button.check:hover {
-  background-color: #333;
-  /* Adjust hover background color as needed */
+  background-color: #333; /* Adjust hover background color as needed */
 }
-
-.adding {
+.adding{
   margin: 10px 0px 6px 0px;
 }
 
-.adding input {
+.adding input{
   margin: 0px 3px 0px 3px;
   width: 16%;
-  text-align: center;
+  text-align: center  ;
 }
-
-.mr-4 img {
+.mr-4 img{
   width: 170px;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 10px 0px 0px ;
 }
-
-.back-shoping button {
+.back-shoping button{
   letter-spacing: .6rem;
 }
-
-.subtract-btn,
-.add-btn {
+.subtract-btn , .add-btn{
   padding: 0px 6px 0px 6px;
 }
-
-.back-shoping button {
+ 
+ .back-shoping button{
   background-color: #fff;
   width: 100%;
-  color: #000;
-  /* Optional: Set text color */
-  padding: 10px;
-  /* Optional: Add padding for better appearance */
-  border: 2px solid #417972;
+  color: #000; /* Optional: Set text color */
+  padding: 10px; /* Optional: Add padding for better appearance */
+  border: 2px solid #417972; 
   cursor: pointer;
-  margin-top: 26px;
+  margin-top:26px;
   /* border-radius: 10px; */
-  font-size: 17px;
+  font-size:17px;
   line-height: 1.75rem;
-  font-family: Montserrat;
+  font-family:Montserrat;
   font-weight: 600;
-  margin-left: 10px;
-}
-
-.back-shoping button:hover {
-  background-color: #417972;
+  margin-left:10px;
+ }
+ 
+.back-shoping button:hover{
+	background-color:#417972;
   border: 2px solid #417972;
 }
-
-.back-shoping {
+.back-shoping{
   margin: 100px 0px 0px 0px;
-}
-
-.snap-emi-slogan {
-  margin-bottom: 15px;
 }
