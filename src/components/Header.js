@@ -17,6 +17,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import OtpInput from "./OtpInput";
+import Addtocart from "./Addtocart";
 
 function Header({show, handleShow, handleClose}) {
   const [showMattressDropdown, setShowMattressDropdown] = useState(false);
@@ -32,6 +33,8 @@ function Header({show, handleShow, handleClose}) {
   const [open, setOpen] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState("");
   const [showOtpInput, setShowOtpInput] = useState(false);
+  const [sideBarshow, setSidebarShow] = useState(false);
+
   const handleLoginOpen = () => {
     setOpen(true);
   }
@@ -109,6 +112,14 @@ function Header({show, handleShow, handleClose}) {
     setShowKidsDropdown(false);
     setKidsHoveredIndex(null);
   };
+
+  // handle add to cart sidenav
+  const handleAddToCartSideNav = () => {
+ setSidebarShow(!sideBarshow);
+  }
+  const handleCloseSideNav = (data) => {
+    setSidebarShow(data);
+  }
   return (
     <>
       <Navbar expand="lg" className="bg" fixed="top">
@@ -394,10 +405,9 @@ function Header({show, handleShow, handleClose}) {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-            <div className="d-flex">
-              <Nav.Link href="#action1" className="nav-item">Blog</Nav.Link>
+            <div className="d-flex">            
               <FontAwesomeIcon icon={faPhone} className="nav-item icon" />
-              <FontAwesomeIcon icon={faCartShopping} className="nav-item icon" />
+              <FontAwesomeIcon icon={faCartShopping} onClick={handleAddToCartSideNav} className="nav-item icon" />
               <FontAwesomeIcon icon={faUser} className="nav-item icon" onClick={handleLoginOpen} />
               <Dialog
                 open={open}
@@ -426,14 +436,7 @@ function Header({show, handleShow, handleClose}) {
                       <OtpInput length={6} onOtpSubmit={onOtpSubmit}/>
                       </div>)
                     }
-                    <div className="google-login my-2">
-                      <button className="google-button">
-                        <div className="google-icon-wrapper">
-                          <img src="https://s4827.pcdn.co/wp-content/uploads/2018/04/Google-logo-2015-G-icon.png" width={50} />
-                        </div>
-                        <p className="google-button-text" onClick={handleGoogleSignIn}>Sign in with Google</p>
-                      </button>
-                    </div>
+                
                   </div>
                   <div class="mb-2">
                 <button class="popup-close" id="close" type="button" onClick={handleLoginClose}>
@@ -447,6 +450,8 @@ function Header({show, handleShow, handleClose}) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      {sideBarshow && <Addtocart handleCloseSideNav={handleCloseSideNav} sideBarshow={sideBarshow}></Addtocart>}
     </>
   );
 }

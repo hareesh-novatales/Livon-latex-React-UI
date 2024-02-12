@@ -446,9 +446,7 @@
       background-blend-mode: overlay, normal;
   }
   
-  button[type="submit"] {
-      pointer-events: none;
-  }
+
   /* ==================== */
   .popup {
     border: #1A1A1A;
@@ -500,7 +498,7 @@
           opacity: 1;
       }
   }
-  .popup-close {
+  .popup-coupon .popup-close {
       position: absolute;
       top: 40px;
       right: 40px;
@@ -647,7 +645,7 @@
       width: 500px;
       margin: auto;
   }
-  .popup-close{
+ .popup-coupon .popup-close{
     width: 28px;
   }
   .accordion-button span{
@@ -772,7 +770,7 @@
       text-align: initial;
   }
   
-  .popup-close { 
+  .popup-coupon .popup-close { 
     top: 16px; 
   
   }
